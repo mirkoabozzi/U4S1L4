@@ -2,6 +2,8 @@ package Esercitazione;
 
 import enums.DepartmentValue;
 
+import java.util.Date;
+
 public class DipendentePartTime extends Dipendente {
     public DipendentePartTime(int matricola, double stipendio, DepartmentValue departmentValue, double oreLavorative) {
         super(matricola, stipendio, departmentValue, oreLavorative);
@@ -13,4 +15,8 @@ public class DipendentePartTime extends Dipendente {
         System.out.println("La matricola " + this.getMatricola() + " guadagna " + this.getStipendio() / this.getOreLavorative());
     }
 
+    @Override
+    public void checkIn() {
+        System.out.println("Orario check.in" + new Date());
+    }
 }

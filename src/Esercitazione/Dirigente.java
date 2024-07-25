@@ -2,6 +2,8 @@ package Esercitazione;
 
 import enums.DepartmentValue;
 
+import java.util.Date;
+
 public class Dirigente extends Dipendente {
     public Dirigente(int matricola, double stipendio, DepartmentValue departmentValue) {
         super(matricola, stipendio, departmentValue);
@@ -13,4 +15,8 @@ public class Dirigente extends Dipendente {
     }
 
 
+    @Override
+    public void checkIn() {
+        System.out.println("Orario check.in" + new Date());
+    }
 }

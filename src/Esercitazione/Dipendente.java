@@ -1,8 +1,9 @@
 package Esercitazione;
 
 import enums.DepartmentValue;
+import interfaces.Worker;
 
-public abstract class Dipendente {
+public abstract class Dipendente implements Worker {
     //Attributi
     private double oreLavorative;
     private int matricola;

@@ -21,5 +21,15 @@ public class Main {
         for (int i = 0; i < dipendenti.length; i++) {
             dipendenti[i].calculateSalary();
         }
+
+
+        Volontario giovanni = new Volontario("Giovanni", 20, true);
+        Volontario francesco = new Volontario("Francesco", 30, false);
+        Volontario andrea = new Volontario("Andrea", 40, true);
+        Volontario[] volontari = {giovanni, francesco, andrea};
+
+        for (int i = 0; i < volontari.length; i++) {
+            volontari[i].checkIn();
+        }
     }
 }
