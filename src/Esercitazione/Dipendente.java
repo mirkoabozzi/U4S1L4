@@ -2,8 +2,9 @@ package Esercitazione;
 
 import enums.DepartmentValue;
 
-public class Dipendente {
+public abstract class Dipendente {
     //Attributi
+    private double oreLavorative;
     private int matricola;
     private double stipendio;
     private DepartmentValue departmentValue;
@@ -21,6 +22,14 @@ public class Dipendente {
 
     }
 
+    public Dipendente(int matricola, double stipendio, DepartmentValue departmentValue, double oreLavorative) {
+        this(matricola, stipendio, departmentValue);
+        this.oreLavorative = oreLavorative;
+    }
+
+    //metodi
+    public abstract void calculateSalary();
+
     //Getter & Setter
     public int getMatricola() {
         return matricola;
@@ -36,6 +45,10 @@ public class Dipendente {
 
     public void setDepartmentValue(DepartmentValue departmentValue) {
         this.departmentValue = departmentValue;
+    }
+
+    public double getOreLavorative() {
+        return oreLavorative;
     }
 
     @Override
