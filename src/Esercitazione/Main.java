@@ -20,6 +20,7 @@ public class Main {
 
         for (int i = 0; i < dipendenti.length; i++) {
             dipendenti[i].calculateSalary();
+            dipendenti[i].checkIn();
         }
 
 

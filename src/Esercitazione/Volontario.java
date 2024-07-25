@@ -19,6 +19,6 @@ public class Volontario implements Worker {
 
     @Override
     public void checkIn() {
-        System.out.println("Orario check.in" + new Date());
+        System.out.println(this.nome + " orario check.in " + new Date());
     }
 }

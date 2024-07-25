@@ -17,6 +17,6 @@ public class Dirigente extends Dipendente {
 
     @Override
     public void checkIn() {
-        System.out.println("Orario check.in" + new Date());
+        System.out.println(this.getMatricola() + " orario check.in " + new Date());
     }
 }
